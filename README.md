@@ -8,12 +8,12 @@ A Go script that retrieves your posts from a Mastodon user and stores them in Po
 
 ---
 
-🔥 Cool Features
+## 🔥 Cool Features
 * Fetch Mastodon posts and store them in PostgreSQL
 * Supports media attachments
 --- 
 
-🚀 Installation
+## 🚀 Installation
 
 **Initial setup**<br>
 1. **Install Go:** https://golang.org/doc/install
@@ -31,10 +31,10 @@ Edit Configurations > Run/Debug Configurations + Go Build<br>
 Files: `main.go`<br>
 Environment: `DB_HOST=localhost;DB_NAME=msg-dev;DB_PASSWORD=root;DB_PORT=5432;DB_USER=postgres;MASTODON_USERNAME=ekeberg`<br>
 
-**Setup Mastedon Account**<br>
+**Setup Mastodon Account**<br>
 * **Create account:** Go to https://mastodon.social and create a new account. <br>
 * **Write some posts:** You can add images to the posts also
-* **Username** The Mastedon `username` is read by environment variable `MASTODON_USERNAME`.
+* **Username** The `Mastodon username` is read by environment variable `MASTODON_USERNAME`.
 
 
 **Running Locally**<br>
@@ -45,6 +45,21 @@ Environment: `DB_HOST=localhost;DB_NAME=msg-dev;DB_PASSWORD=root;DB_PORT=5432;DB
 * **Build:** `docker build -t mastodon-statuses-to-postgres-go .`.
 * **Run:** `docker run -p 8080:8080 mastodon-statuses-to-postgres-go`
 
+
+
+
+---
+
+## 🌐 Connect with GO API and Next.js Consumer
+
+You can use the other applications in order to connect:
+
+* **🐘 [mastodon-statuses-to-postgres-go](https://github.com/ditlef9/mastodon-statuses-to-postgres-go):** Reads statuses from a user at Mastodon and stores them in PostgreSQL using Golang.
+* **🗒️ [messaging-api-postgresql-go](https://github.com/ditlef9/messaging-api-postgresql-go):** An API that serves the messages (Mastadon statuses) from Postgresql developed in Go
+* **⚛️ [message-consumer-nextjs](https://github.com/ditlef9/message-consumer-nextjs):** Consumes messages from the Messaging API. Developmed in Next.JS.
+
+
+![Mastodon to PostgreSQL to API to Consumer](docs/Mastodon-to-PostgreSQL-to-API-to-Consumer.drawio.png)
 
 
 ---
