@@ -50,13 +50,13 @@ Environment: `DB_HOST=localhost;DB_NAME=msg-dev;DB_PASSWORD=root;DB_PORT=5432;DB
 
 ---
 
-## 🌐 Connect with GO API and Next.js Consumer
+## 🌐 See Also
 
 You can use the other applications in order to connect:
 
-* **🐘 [mastodon-statuses-to-postgres-go](https://github.com/ditlef9/mastodon-statuses-to-postgres-go):** Reads statuses from a user at Mastodon and stores them in PostgreSQL using Golang.
+* **🐘 [mastodon-statuses-to-postgres-go](https://github.com/ditlef9/mastodon-statuses-to-postgres-go):** (This application) Reads statuses from a user at Mastodon and stores them in PostgreSQL using Golang.
 * **🗒️ [messaging-api-postgresql-go](https://github.com/ditlef9/messaging-api-postgresql-go):** An API that serves the messages (Mastadon statuses) from Postgresql developed in Go
-* **⚛️ [message-consumer-nextjs](https://github.com/ditlef9/message-consumer-nextjs):** Consumes messages from the Messaging API. Developmed in Next.JS.
+* **⚛️ [messages-consumer-nextjs](https://github.com/ditlef9/messages-consumer-nextjs):** Consumes messages from the Messaging API. Developmed in Next.JS.
 
 
 ![Mastodon to PostgreSQL to API to Consumer](docs/Mastodon-to-PostgreSQL-to-API-to-Consumer.drawio.png)
