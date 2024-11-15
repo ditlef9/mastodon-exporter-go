@@ -11,6 +11,8 @@ A Go script that retrieves your posts from a Mastodon user and stores them in Po
 ## 🔥 Cool Features
 * Fetch Mastodon posts and store them in PostgreSQL
 * Supports media attachments
+* Handles update and delete statuses
+
 --- 
 
 ## 🚀 Installation
@@ -58,6 +60,9 @@ You can use the other applications in order to connect:
 * **🗒️ [messaging-api-postgresql-go](https://github.com/ditlef9/messaging-api-postgresql-go):** An API that serves the messages (Mastadon statuses) from Postgresql developed in Go
 * **⚛️ [messages-consumer-nextjs](https://github.com/ditlef9/messages-consumer-nextjs):** Consumes messages from the Messaging API. Developmed in Next.JS.
 
+<br><br>
+
+**Architecture for all three applications together:**<br>
 
 ![Mastodon to PostgreSQL to API to Consumer](docs/Mastodon-to-PostgreSQL-to-API-to-Consumer.drawio.png)
 
